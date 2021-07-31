@@ -1,0 +1,36 @@
+.btn {
+   border: 0;
+   height: 36px;
+   padding: 10px 12px;
+   border-radius: 12px;
+   font-family: inherit;
+   font-weight: 500;
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.btn-primary {
+   background-color: #3F6C6B;
+   font-size: 12px;
+   color: #fff;
+   letter-spacing: 0.2px;
+}
+
+.btn-secondary {
+   background-color: #EE5C5C;
+   font-size: 12px;
+   color: #fff;
+   letter-spacing: 0.2px;
+}
+
+.btn-close {
+   font-size: 16px;
+   background-color: #fff;
+   font-weight: 600;
+   color: #7A8598;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

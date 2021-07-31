@@ -1,0 +1,199 @@
+// Chart One styles
+svg > line.bar_wrapper_one {
+   stroke: #F7E8E5;
+   stroke-width: 2.5;
+}
+
+svg > line.bar_anim_one {
+   stroke: #E66E3B;
+	stroke-dasharray: 0 35;
+	animation-name: appear35;
+}
+
+svg > line.bar_anim_two {
+   stroke: #E66E3B;
+	stroke-dasharray: 0 20;
+	animation-name: appear20;
+   animation-delay: 0.45s;
+}
+
+svg > line.bar_anim_three {
+   stroke: #E66E3B;
+	stroke-dasharray: 0 25;
+	animation-name: appear25;
+   animation-delay: 1.5s;
+}
+
+svg > line.bar_anim_four {
+   stroke: #E66E3B;
+	stroke-dasharray: 0 15;
+	animation-name: appear15;
+   animation-delay: 2.25s;
+}
+
+svg > line.bar_anim_five {
+   stroke: #E66E3B;
+	stroke-dasharray: 0 45;
+	animation-name: appear45;
+   animation-delay: 2.5s;
+}
+
+@keyframes appear35 {
+	0% { stroke-dasharray: 0 35; }
+	50% { stroke-dasharray: 35 35; }
+	100% { stroke-dasharray: 35 35; }
+}
+
+@keyframes appear45 {
+	0% { stroke-dasharray: 0 45; }
+	50% { stroke-dasharray: 45 45; }
+	100% { stroke-dasharray: 45 45; }
+}
+
+
+// Chart 2 styles
+svg > line {
+	stroke: #C2D9D7;
+	stroke-width: 2.5;
+   stroke-linecap: round;
+	
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+svg > line.bar_one {
+	stroke-dasharray: 0 15;
+	animation-name: appear15;
+}
+svg > line.bar_two {
+	stroke-dasharray: 0 15;
+	animation-name: appear15; 
+	animation-delay: 0.163s;
+}
+svg > line.bar_three { 
+	stroke-dasharray: 0 10;
+	animation-name: appear10;
+	animation-delay: 0.326s;
+}
+
+svg > line.bar_four { 
+	stroke-dasharray: 0 10;
+	animation-name: appear10;
+	animation-delay: 0.489s;
+}
+
+svg > line.bar_five { 
+	stroke-dasharray: 0 17;
+	animation-name: appear17;
+	animation-delay: 1.052s;
+}
+
+svg > line.bar_six { 
+	stroke-dasharray: 0 16;
+	animation-name: appear16;
+	animation-delay: 1.215s;
+}
+
+svg > line.bar_seven {
+   stroke: #315858; 
+	stroke-dasharray: 0 20;
+	animation-name: appear20;
+	animation-delay: 1.378s;
+}
+
+svg > line.bar_eight { 
+	stroke-dasharray: 0 17;
+	animation-name: appear17;
+	animation-delay: 1.541s;
+}
+
+svg > line.bar_nine { 
+	stroke-dasharray: 0 10;
+	animation-name: appear10;
+	animation-delay: 2.104s;
+}
+
+svg > line.bar_ten { 
+	stroke-dasharray: 0 10;
+	animation-name: appear10;
+	animation-delay: 2.267s;
+}
+
+svg > line.bar_eleven { 
+   stroke: #315858; 
+	stroke-dasharray: 0 16;
+	animation-name: appear16;
+	animation-delay: 2.43s;
+}
+
+svg > line.bar_twelve { 
+	stroke-dasharray: 0 10;
+	animation-name: appear10;
+	animation-delay: 2.5s;
+}
+
+@keyframes appear10 {
+	0% { stroke-dasharray: 0 10; }
+	50% { stroke-dasharray: 10 10; }
+	100% { stroke-dasharray: 10 10; }
+}
+
+@keyframes appear15 {
+	0% { stroke-dasharray: 0 15; }
+	50% { stroke-dasharray: 15 15; }
+	100% { stroke-dasharray: 15 15; }
+}
+
+@keyframes appear16 {
+	0% { stroke-dasharray: 0 16; }
+	50% { stroke-dasharray: 16 16; }
+	100% { stroke-dasharray: 16 16; }
+}
+
+@keyframes appear17 {
+	0% { stroke-dasharray: 0 17; }
+	50% { stroke-dasharray: 17 17; }
+	100% { stroke-dasharray: 17 17; }
+}
+
+@keyframes appear20 {
+	0% { stroke-dasharray: 0 20; }
+	50% { stroke-dasharray: 20 20; }
+	100% { stroke-dasharray: 20 20; }
+}
+
+@keyframes appear25 {
+	0% { stroke-dasharray: 0 25; }
+	50% { stroke-dasharray: 25 25; }
+	100% { stroke-dasharray: 25 25; }
+}
+
+
+// Chart 3 Styles
+.circle-chart__circle {
+   animation: circle-chart-fill 3s reverse; /* 1 */ 
+   transform: rotate(-90deg); /* 2, 3 */
+   transform-origin: center; /* 4 */
+}
+ 
+.circle-chart__info {
+   animation: circle-chart-appear 2s forwards;
+   opacity: 0;
+   transform: translateY(0.3em);
+
+   .circle-chart__percent {
+      font-family: inherit;
+      font-weight: 700;
+   }
+}
+ 
+@keyframes circle-chart-fill {
+   to { stroke-dasharray: 0 471; }
+}
+ 
+@keyframes circle-chart-appear {
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+}
